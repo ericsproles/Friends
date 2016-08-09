@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="16A254g" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SearchViewController" customModule="Photog" customModuleProvider="target">
+            <connections>
+                <outlet property="searchBar" destination="o7E-Wj-2KT" id="ic5-Wh-Sbn"/>
+                <outlet property="tableView" destination="0TT-Lm-LIN" id="VWr-eK-z4y"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0TT-Lm-LIN">
+                    <rect key="frame" x="0.0" y="44" width="600" height="556"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+                <searchBar contentMode="redraw" placeholder="Search Users" translatesAutoresizingMaskIntoConstraints="NO" id="o7E-Wj-2KT">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="Yui-oq-gQ5"/>
+                    </constraints>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="hAu-XY-EbR"/>
+                    </connections>
+                </searchBar>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="o7E-Wj-2KT" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Jf6-NA-FeX"/>
+                <constraint firstItem="o7E-Wj-2KT" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="T1J-z3-JB8"/>
+                <constraint firstAttribute="trailing" secondItem="o7E-Wj-2KT" secondAttribute="trailing" id="WDz-BW-Ort"/>
+                <constraint firstAttribute="bottom" secondItem="0TT-Lm-LIN" secondAttribute="bottom" id="g4m-0q-twR"/>
+                <constraint firstAttribute="trailing" secondItem="0TT-Lm-LIN" secondAttribute="trailing" id="j4B-FO-4rT"/>
+                <constraint firstItem="0TT-Lm-LIN" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="tQv-DV-zs9"/>
+                <constraint firstItem="0TT-Lm-LIN" firstAttribute="top" secondItem="o7E-Wj-2KT" secondAttribute="bottom" id="y0V-7X-v7Q"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

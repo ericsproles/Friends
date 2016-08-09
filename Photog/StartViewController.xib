@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="16A254g" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="StartViewController" customModule="Photog" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="StartViewControllerBackground" translatesAutoresizingMaskIntoConstraints="NO" id="JDM-GH-dXp">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Rz-dj-gK4">
+                    <rect key="frame" x="10" y="546" width="580" height="44"/>
+                    <color key="backgroundColor" white="1" alpha="0.5" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="svW-ZV-895"/>
+                    </constraints>
+                    <state key="normal" title="Sign In">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="didTapSignIn:" destination="-1" eventType="touchUpInside" id="c43-eP-Mau"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U9i-9g-Ins">
+                    <rect key="frame" x="10" y="492" width="580" height="44"/>
+                    <color key="backgroundColor" white="1" alpha="0.5" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="6Km-7e-OVi"/>
+                        <constraint firstAttribute="height" constant="44" id="Sae-zC-cbn"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="44" id="Yd3-sW-KdL"/>
+                    </constraints>
+                    <state key="normal" title="Sign Up">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="6Km-7e-OVi"/>
+                            <exclude reference="Yd3-sW-KdL"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <action selector="didTapSignUp:" destination="-1" eventType="touchUpInside" id="GZj-8L-4CF"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="U9i-9g-Ins" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="2ZL-Yr-CxT"/>
+                <constraint firstAttribute="trailing" secondItem="U9i-9g-Ins" secondAttribute="trailing" constant="277" id="40A-ad-tWD"/>
+                <constraint firstAttribute="trailing" secondItem="U9i-9g-Ins" secondAttribute="trailing" constant="10" id="8TU-Dh-d6B"/>
+                <constraint firstAttribute="bottom" secondItem="8Rz-dj-gK4" secondAttribute="bottom" constant="10" id="ARF-fR-P0R"/>
+                <constraint firstItem="U9i-9g-Ins" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="CGp-fq-ha7"/>
+                <constraint firstItem="U9i-9g-Ins" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="MBe-Ly-G8r"/>
+                <constraint firstItem="8Rz-dj-gK4" firstAttribute="top" secondItem="U9i-9g-Ins" secondAttribute="bottom" constant="10" id="Sie-K7-EvM"/>
+                <constraint firstItem="8Rz-dj-gK4" firstAttribute="top" secondItem="U9i-9g-Ins" secondAttribute="bottom" constant="17" id="XJm-Od-W0O"/>
+                <constraint firstAttribute="trailing" secondItem="8Rz-dj-gK4" secondAttribute="trailing" constant="10" id="aso-qN-Qo3"/>
+                <constraint firstAttribute="trailing" secondItem="JDM-GH-dXp" secondAttribute="trailing" id="cmK-vh-bRn"/>
+                <constraint firstAttribute="bottom" secondItem="JDM-GH-dXp" secondAttribute="bottom" id="eiY-07-6h7"/>
+                <constraint firstItem="8Rz-dj-gK4" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="ib8-jy-Zcc"/>
+                <constraint firstItem="8Rz-dj-gK4" firstAttribute="top" secondItem="U9i-9g-Ins" secondAttribute="bottom" constant="24" id="lRz-9I-nML"/>
+                <constraint firstItem="JDM-GH-dXp" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="lwE-b0-cNW"/>
+                <constraint firstAttribute="trailing" secondItem="U9i-9g-Ins" secondAttribute="trailing" constant="10" id="rUn-7I-ida"/>
+                <constraint firstItem="JDM-GH-dXp" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="yqM-mV-dDi"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="2ZL-Yr-CxT"/>
+                    <exclude reference="40A-ad-tWD"/>
+                    <exclude reference="8TU-Dh-d6B"/>
+                    <exclude reference="CGp-fq-ha7"/>
+                    <exclude reference="XJm-Od-W0O"/>
+                    <exclude reference="lRz-9I-nML"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+    <resources>
+        <image name="StartViewControllerBackground" width="640" height="960"/>
+    </resources>
+</document>
